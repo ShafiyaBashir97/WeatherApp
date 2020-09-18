@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="get_current_weather_data">get_current_weather_data</string>
+    <string name="temp">Temp</string>
+    <string name="description">Description</string>
+    <string name="humidity">Humidity</string>
+</resources>
