@@ -6,9 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 //api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
 
-const val BASE_URL="https://api.openweathermap.org/data/2.5/"
+const val BASE_URL="http://api.openweathermap.org/data/2.5/"
 object ApiClient{
-    var apiInterface : ApiInterface? = null
+    var apiInterface : ApiInterface
 
     init {
         val retrofit = Retrofit.Builder()
@@ -19,4 +19,5 @@ object ApiClient{
         // this method is used to give the implementaion of passed interface
         //wherever we may need the above endpoint (the interface), we will call the "newsInstance"
     }
+    //api.openweathermap.org/data/2.5/forecast/daily/
 }
